@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* border: 1px solid black; */
+        }
+
+        body{
+            background: url('https://images.pexels.com/photos/355663/pexels-photo-355663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin:20px auto;
+            padding: 20px;
+
+            background-color: wheat;
+
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            padding: 5px;
+            outline: none;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            /* gap: 10px; */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        button{
+            color: white;
+            background-color: brown;
+            outline: none;
+            border: none;
+            text-transform: capitalize;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Survey Form</h1>
+            <p>Please take a moment to fill out our survey</p>
+        </div>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+
+            <label for="mail">Your Email:</label>
+            <input type="email" id="mail" placeholder="enter your email" />
+
+            <label for="age">Your Age </label>
+            <input type="number" id="age" placeholder="enter your age" />
+
+            <label for="dropdown">How did you hear about us ?</label>
+            <select id="dropdown">
+                <option value="" disabled selected>Select an option</option>
+                <option value="search">Search Engine</option>
+                <option value="social media">Social Media</option>
+                <option value="family friend">Family / Friend </option>
+            </select>
+
+            <label for="interest">Select your interest:</label>
+            <div id="interest">
+                <lable for="coding">Coding</lable>
+                <input type="radio" id="coding" name="interest" />
+                <lable for="music">Music</lable>
+                <input type="radio" id="music" name="interest" />
+                <lable for="sports">Sports</lable>
+                <input type="radio" id="sports" name="interest" />
+            </div>
+
+
+            <label for="hobbies">Select your hobbies:</label>
+            <div id="hobbies">
+                <lable for="reading">Reading</lable>
+                <input type="checkbox" id="reading" />
+                <lable for="traveling">Traveling</lable>
+                <input type="checkbox" id="traveling" />
+                <lable for="cooking">Cooking</lable>
+                <input type="checkbox" id="cooking" />
+            </div>
+            <label for="comments">Any Comments?</label>
+            <textarea rows="5" cols="4" ></textarea>
+            <button>submit</button>
+
+
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
